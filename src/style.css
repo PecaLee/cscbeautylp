@@ -1,0 +1,23 @@
+@import url("reset.css");
+@import url("header.css");
+@import url("banner.css");
+@import url("footer.css");
+
+*{
+    box-sizing: border-box;
+}
+
+html{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body{
+    width: 1024px;
+}
+
+a, a:hover, a:link, a:visited, a:active{
+    text-decoration: none;
+    color: white;
+}
