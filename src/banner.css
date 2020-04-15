@@ -1,4 +1,6 @@
 .banner {
+    font-family: 'Sawarabi Mincho', sans-serif;
+    line-height: 3.5rem;
     -ms-flex-align: center;
     -ms-flex-pack: center;
     background-color: #111111;

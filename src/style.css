@@ -2,12 +2,15 @@
 @import url("header.css");
 @import url("banner.css");
 @import url("footer.css");
+@import url("article.css");
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@700&family=Sawarabi+Gothic&family=Sawarabi+Mincho&display=swap');
 
 *{
     box-sizing: border-box;
 }
 
 html{
+    font-family: 'Sawarabi Gothic', sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -20,4 +23,8 @@ body{
 a, a:hover, a:link, a:visited, a:active{
     text-decoration: none;
     color: white;
+}
+
+h2{
+    font-family: 'Noto Sans JP', sans-serif;
 }

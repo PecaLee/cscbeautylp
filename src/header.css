@@ -8,7 +8,7 @@ header{
     justify-content: space-between;
 }
 
-.button, .free{
+.button.free{
     width: 10%;
     height: 100%;
     background-color: #07b1ec;
