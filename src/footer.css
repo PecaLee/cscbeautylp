@@ -1,11 +1,30 @@
 footer{
+    width: 100%;
     font-family: 'Sawarabi Gothic', sans-serif;
+    font-size: 0.8rem;
     padding: 30px;
     color: rgba(255, 255, 255, 0.8);
     background-color: #111111;
     display: flex;
     flex-direction: column;
-    font-size: 0.8rem;
+    align-items: center;
+}
+
+.innerFooterContainer{
+    display: flex;
+}
+
+.innerFooterContainer_wrap{
+    display: flex;
+}
+
+.innerFooterContainer ul{
+    margin-right: 15px;
+}
+
+.innerFooterContainer ul li{
+    margin-top: 10px;
+    line-height: 0.9rem;
 }
 
 footer h2{
@@ -13,32 +32,7 @@ footer h2{
     margin-bottom: 20px;
 }
 
-.companyInfo.box.bigbox{
-    display: flex;
-    align-items: center;
-}
-
-.companyInfo{
-    display: flex;
-}
-
-.companyInfo ul{
-    margin-right: 20px;
-}
-
-.companyInfo ul li{
- display: flex;
- align-items: center;
- justify-content: left;
- margin: 3px 0px 3px 0px;
-}
-
-.prize ul li{
-    margin: 5px 0px 5px 0px;
-}
-
 .prize img{
     width: auto;
     height: 40px;
-
 }
