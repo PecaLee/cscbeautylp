@@ -78,3 +78,14 @@
       webkit-linear-gradientidth: 100%;
       width: 100%;
       z-index: 1; }
+
+@media screen and (max-width:700px){
+  .banner{
+    line-height: 2rem;
+  }
+  .banner h1 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem; }
+  .banner span {
+    font-size: 1rem; }
+}

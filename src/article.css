@@ -1,5 +1,5 @@
 article{
-    width: 75%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -33,11 +33,15 @@ article img{
     height: 220px;
     margin: 30px 30px 0 30px;
     padding: 15px;
-    background-color: thistle;
+    background-color: #ffffff;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    border-radius: 4px;
+    -webkit-box-shadow: 0px 0px 12px 2px rgba(0,0,0,0.1);
+    -moz-box-shadow: 0px 0px 12px 2px rgba(0,0,0,0.1);
+    box-shadow: 0px 0px 12px 2px rgba(0,0,0,0.1);
 }
 
 .art1 ul li span{
@@ -56,6 +60,7 @@ article img{
 }
 
 .art2{
+    width: 100%;
     margin-top: 60px;
     display: flex;
     flex-direction: column;
@@ -84,13 +89,175 @@ article img{
     height: 220px;
     margin: 30px 30px 0 30px;
     padding: 15px;
-    background-color: thistle;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    -webkit-box-shadow: 0px 0px 12px 2px rgba(0,0,0,0.1);
+    -moz-box-shadow: 0px 0px 12px 2px rgba(0,0,0,0.1);
+    box-shadow: 0px 0px 12px 2px rgba(0,0,0,0.1);
+}
+
+.art2_inner.inner1>span{
+    padding: 30px 0 0 0;
+}
+
+.art2 .inner1 img:first-child{
+    width: 200px;
+    height: auto;
+}
+
+.art2 .inner1 h2{
+    margin-top: 30px;
+}
+
+.art2_inner.inner2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.inner2_art {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.inner2_art h3{
+    margin-top: 30px;
+}
+
+.inner2 ul{
+    width: 100%;
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.inner2 ul li{
+    width: 320px;
+    height: 290px;
+    margin: 30px 30px 0 30px;
+    padding: 15px;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    -webkit-box-shadow: 0px 0px 12px 2px rgba(0,0,0,0.1);
+    -moz-box-shadow: 0px 0px 12px 2px rgba(0,0,0,0.1);
+    box-shadow: 0px 0px 12px 2px rgba(0,0,0,0.1);
+}
+
+.inner2 ul li *{
+    margin: 10px 0 10px 0;
+}
+
+.inner2 ul li span:first-child{
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 1.1rem;
+}
+
+.sonota{
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 1.2rem;
+    margin: 30px 0 30px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.partner{
+    background-color: #07b1ec;
+    color: white;
+    background-attachment: fixed;
+    background-image: linear-gradient(rgba(12, 128, 167, 0.25), rgba(12, 128, 167, 0.25)), url(imgs/network.jpg);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    text-align: center;
+    z-index: 1; 
+    padding: 30px 0 30px 0;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
-.art2_inner.inner1>span{
-    padding: 30px 0 0 0;
+.partner h2{
+    font-size: 4rem;
+}
+
+.partner ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.partner ul li{
+    margin: 30px 30px 0 30px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.partner ul li img{
+    width: auto;
+    height: 60px;
+}
+
+.partner ul li span{
+    padding-top: 10px;
+}
+
+.art3{
+    margin: 30px 0 30px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.art3 h2{
+    margin-bottom: 30px;
+}
+
+.art3 img{
+    width: 200px;
+    height: auto;
+    margin-bottom: 30px;
+}
+
+.art3 h3:last-child{
+    margin-top: 15px;
+}
+
+@media screen and (max-width:700px){
+    .art1, .art3{
+        padding: 0 30px 0 30px;
+    }
+    .art2 h3{
+        padding: 0 30px 0 30px;
+    }
+    article h2{
+        font-size: 1rem;
+    }
+    article h3{
+        font-size: 0.8rem;
+    }
+    .sonota span{
+        font-size: 0.7rem;
+    }
+    .partner h2{
+        font-size: 1.3rem;
+    }
 }
