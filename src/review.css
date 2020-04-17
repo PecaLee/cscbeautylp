@@ -39,3 +39,6 @@ blockquote{
     margin-top: 20px;
 }
 
+.review{
+    display: none;
+}

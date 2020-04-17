@@ -5,6 +5,7 @@
 @import url("article.css");
 @import url("review.css");
 @import url("mediaquery.css");
+@import url("contact.css");
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@700&family=Sawarabi+Gothic&family=Sawarabi+Mincho&display=swap');
 
 *{
@@ -52,8 +53,4 @@ h2{
 h3{
     font-family: 'Noto Sans JP', sans-serif;
     font-size: 1.2rem;
-}
-
-@media screen and (max-width:700px){
-
 }

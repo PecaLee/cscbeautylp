@@ -1,6 +1,14 @@
 @media screen and (max-width:480px){
     html{
-        width: 480px;
+        width: 100%;
+    }
+
+    .banner video {
+        display: none; 
+    }
+
+    article{
+        line-height: 1.2rem;
     }
 
     .art1, .art3{
@@ -33,4 +41,5 @@
     .prize{
         margin-top: 15px;
     }
+    
 }

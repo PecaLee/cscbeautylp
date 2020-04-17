@@ -2,7 +2,20 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=1.0">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-61698882-9"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-61698882-9');
+    </script>
+
+    <link rel="shortcut icon" href="https://s-cs-c.com/assets/imgs/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="https://s-cs-c.com/assets/imgs/favicon.ico">
+
     <title>株式会社CS-C</title>
     <link rel="stylesheet" href="src/style.css">
 </head>
@@ -50,7 +63,7 @@
                 <div class="art2_inner inner1">
                     <img src="src/icon/02_00_data.svg" alt="">
                     <h2>取引実績と他にない情報力</h2>
-                    <h3>全国10，000店舗のデータをもとに全国各地、業態ごとの”実績”から滴正な診断・対策を実施いたします。</h3>
+                    <h3>全国10，000店舗のデータをもとに全国各地、業態ごとの”実績”から適正な診断・対策を実施いたします。</h3>
                     <h2>取引実績</h2>
                     <ul>
                         <li>導入社数400社以上</li>
@@ -150,7 +163,59 @@
 
     <!--email-form-->
     <div id="form">
+        
+    <form class="gform pure-form pure-form-stacked" method="POST" data-email="example@email.net" action="https://script.google.com/a/s-cs-c.com/macros/s/AKfycbznhL6q_0Bpv9Px7eDkip2YTu6HgqCo7WVkeP-SBA/exec">
+    <!-- change the form action to your script url -->
 
+    <div class="form-elements">
+        <h2>お問い合わせフォーム</h2>
+
+      <fieldset class="pure-group">
+        <label for="name">氏名 </label>
+        <input id="name" name="name" required placeholder="氏名" />
+      </fieldset>
+
+      <fieldset class="pure-group">
+        <label for="company">会社名又は店舗名 </label>
+        <input id="company" name="company" required placeholder="会社名又は店舗名" />
+      </fieldset>
+
+      <fieldset class="pure-group">
+        <label for="email">E-mail </label>
+        <input id="email" name="email" type="email" value=""
+        required placeholder="mail@email.com"/>
+      </fieldset>
+
+      <fieldset class="pure-group">
+        <label for="phonenum">電話番号 </label>
+        <input id="phonenum" name="phonenum" required placeholder="123-4567-8901" />
+      </fieldset>
+
+      <fieldset class="pure-group">
+        <label for="message">お問い合わせ内容 </label>
+        <textarea id="message" name="message" rows="10"
+        placeholder="何か店舗の課題等ございましたらこちらに記入ください。"></textarea>
+      </fieldset>
+
+      <fieldset class="pure-group honeypot-field">
+        <label for="honeypot">To help avoid spam, utilize a Honeypot technique with a hidden text field; must be empty to submit the form! Otherwise, we assume the user is a spam bot.</label>
+        <input id="honeypot" type="text" name="honeypot" value="" />
+      </fieldset>
+
+      <button class="button-success pure-button button-xlarge">
+        <i class="fa fa-paper-plane"></i>&nbsp;送信する</button>
+    </div>
+
+    <!-- Customise the Thankyou Message People See when they submit the form: -->
+    <div class="thankyou_message" style="display:none;">
+      <h2>お問い合わせありがとうございます。</h2>
+    </div>
+
+  </form>
+
+  <!-- Submit the Form to Google Using "AJAX" -->
+  <script data-cfasync="false" src="src/form-submission-handler.js"></script>
+    <!-- END -->
 
     </div>
     
