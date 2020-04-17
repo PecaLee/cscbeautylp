@@ -241,23 +241,3 @@ article img{
     margin-top: 15px;
 }
 
-@media screen and (max-width:700px){
-    .art1, .art3{
-        padding: 0 30px 0 30px;
-    }
-    .art2 h3{
-        padding: 0 30px 0 30px;
-    }
-    article h2{
-        font-size: 1rem;
-    }
-    article h3{
-        font-size: 0.8rem;
-    }
-    .sonota span{
-        font-size: 0.7rem;
-    }
-    .partner h2{
-        font-size: 1.3rem;
-    }
-}

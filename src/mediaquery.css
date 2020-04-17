@@ -1,0 +1,36 @@
+@media screen and (max-width:480px){
+    html{
+        width: 480px;
+    }
+
+    .art1, .art3{
+        padding: 0 30px 0 30px;
+    }
+    .art2 h3{
+        padding: 0 30px 0 30px;
+    }
+    article h2{
+        font-size: 1rem;
+    }
+    article h3{
+        font-size: 0.8rem;
+    }
+    .sonota span{
+        font-size: 0.7rem;
+    }
+    .partner h2{
+        font-size: 1.3rem;
+    }
+
+    .review h2{
+        font-size: 1rem;
+    }
+
+    .innerFooterContainer{
+        flex-direction: column;
+    }
+
+    .prize{
+        margin-top: 15px;
+    }
+}
