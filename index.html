@@ -56,7 +56,7 @@
                 <h3>10,000店舗様を支援してきたデータをもとに最適な販促プランを期間限定で”無料”でご案内いたします。</h3>
             </div>
            
-            <div class="button free inArticle"><a href="#form">無料診断</a></div>
+            <div class="button free inArticle"><a href="#form">無料診断を申し込む</a></div>
         
             <div class="art2">
                 <h2>CS-Cが選ばれる理由</h2>
@@ -163,68 +163,57 @@
 
     <!--email-form-->
     <div id="form">
-        
-    <form class="gform pure-form pure-form-stacked" method="POST" data-email="example@email.net" action="https://script.google.com/a/s-cs-c.com/macros/s/AKfycbznhL6q_0Bpv9Px7eDkip2YTu6HgqCo7WVkeP-SBA/exec">
-    <!-- change the form action to your script url -->
+
+<form action="https://pro.form-mailer.jp/fm/service/Forms/complete" method="post" name="form1" ENCTYPE="multipart/form-data">
 
     <div class="form-elements">
-        <h2>お問い合わせフォーム</h2>
+        <h2>無料診断を申し込む</h2>
 
-      <fieldset class="pure-group">
-        <label for="name">氏名 </label>
-        <input id="name" name="name" required placeholder="氏名" />
-      </fieldset>
+        <input type="hidden" name="key" value="1ad3e50a194390" >
+        
+        <fieldset class="pure-group">
+            <label for="name">* 氏名 </label>
+            <input name="field_3041419" type="text" required placeholder="氏名" >
+        </fieldset>
+        
+        <fieldset class="pure-group">
+            <label for="company">* 会社名又は店舗名 </label>
+            <input name="field_3041422" type="text" required placeholder="会社名又は店舗名" >
+        </fieldset>
+        
+        <fieldset class="pure-group">
+            <label for="email">* E-mail </label>
+            <input name="field_3041431" type="text" required placeholder="name@mail.com" >
+        </fieldset>
 
-      <fieldset class="pure-group">
-        <label for="company">会社名又は店舗名 </label>
-        <input id="company" name="company" required placeholder="会社名又は店舗名" />
-      </fieldset>
+        <fieldset class="pure-group">
+            <label for="phonenum">* 電話番号 </label>
+            <input name="field_3041433" type="text" required placeholder="000-0000-0000" >
+        </fieldset>
+        
+        <fieldset class="pure-group">
+            <label for="message">お問い合わせ内容 </label>
+            <textarea name="field_3041439" cols="30" rows="5" placeholder="何か店舗の課題などございましたらこちらに記入ください。"></textarea>
+        </fieldset>
+        
+        <fieldset class="pure-group">
+            <label for="introduction">ご紹介元 </label>
+            <input name="field_3041440" type="text" required placeholder="ご紹介者の方がいる場合" >
+        </fieldset>
 
-      <fieldset class="pure-group">
-        <label for="email">E-mail </label>
-        <input id="email" name="email" type="email" value=""
-        required placeholder="mail@email.com"/>
-      </fieldset>
 
-      <fieldset class="pure-group">
-        <label for="phonenum">電話番号 </label>
-        <input id="phonenum" name="phonenum" required placeholder="123-4567-8901" />
-      </fieldset>
 
-      <fieldset class="pure-group">
-        <label for="message">お問い合わせ内容 </label>
-        <textarea id="message" name="message" rows="10"
-        placeholder="何か店舗の課題等ございましたらこちらに記入ください。"></textarea>
-      </fieldset>
 
-      <fieldset class="pure-group">
-        <label for="introduction">紹介元 </label>
-        <input id="introduction" name="introduction" placeholder="紹介元" />
-      </fieldset>
-
-      <fieldset class="pure-group honeypot-field">
-        <label for="honeypot">To help avoid spam, utilize a Honeypot technique with a hidden text field; must be empty to submit the form! Otherwise, we assume the user is a spam bot.</label>
-        <input id="honeypot" type="text" name="honeypot" value="" />
-      </fieldset>
-
-      <button class="button-success pure-button button-xlarge">
-        <i class="fa fa-paper-plane"></i>&nbsp;送信する</button>
+        <!-- charset -->
+        <!-- charset -->
+        <!-- paypal no confirm alert -->
+        <!-- paypal no confirm alert -->
+        <input class="button-success pure-button button-xlarge" name="submit" type="submit" value="送信する">
+        <!-- PayPal Logo -->
+        <!-- PayPal Logo -->
     </div>
-
-    <!-- Customise the Thankyou Message People See when they submit the form: -->
-    <div class="thankyou_message" style="display:none;">
-      <h2>お問い合わせありがとうございます。</h2>
+    </form>
     </div>
-
-  </form>
-
-  <!-- Submit the Form to Google Using "AJAX" -->
-  <script data-cfasync="false" src="src/form-submission-handler.js"></script>
-    <!-- END -->
-    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
-    <script src="src/scroll.js"></script>
-    </div>
-    
 
     <!--footer-->
     <footer>
