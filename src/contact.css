@@ -1,35 +1,27 @@
 .form{
-    width: 60%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-.form-elements{
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin-bottom: 60px;
 }
 
-.form-elements h2{
+.form h2{
     margin-bottom: 30px;
 }
 
 .pure-group{
+    width: 100%;
     display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .pure-group *{
     width: 600px;
     margin: 8px 0 8px 0;
 }
-
-.honeypot-field {
-    display: none;
-  }
 
 label{
     font-size: 1.5rem;
