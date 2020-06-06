@@ -33,6 +33,14 @@
       gtag('config', 'UA-61698882-9');
     </script>
 
+    <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-T2J8F2V');</script>
+    <!-- End Google Tag Manager -->
+
     <link rel="shortcut icon" href="https://s-cs-c.com/assets/imgs/favicon.ico">
     <link rel="icon" type="image/x-icon" href="https://s-cs-c.com/assets/imgs/favicon.ico">
 
@@ -235,7 +243,7 @@
         <!-- charset -->
         <!-- paypal no confirm alert -->
         <!-- paypal no confirm alert -->
-        <input class="button-success pure-button button-xlarge" name="submit" type="submit" value="送信する">
+        <input class="button-success pure-button button-xlarge" name="submit" type="submit" value="送信する" onclick="ga('send', 'event', 'button', 'click', 'submit', 1, {'nonInteraction': 1});">
         <!-- PayPal Logo -->
         <!-- PayPal Logo -->
     </form>
