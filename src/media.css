@@ -1,0 +1,183 @@
+@media screen and (min-width: 415px) {
+    .banner {
+        height: 500px;
+        padding: 0 20%;
+    }
+
+    .banner .inner {
+        box-shadow: 0px 0px 18px -5px rgba(0, 0, 0, 0.7);
+    }
+
+    .banner .inner .innerH1 h1 {
+        font-size: 2rem;
+        line-height: 2.5rem;
+    }
+
+    article {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    article h2 {
+        font-size: 1.7rem;
+        line-height: 2rem;
+        letter-spacing: 2px;
+    }
+
+    article h3 {
+        font-size: 1.3rem;
+        line-height: 1.8rem;
+    }
+
+    article .art1,
+    article .art2,
+    article .art3 {
+        padding: 0 20%;
+    }
+
+    article .button.free.inArticle {
+        width: 320px;
+    }
+
+    .standImg {
+        width: 480px;
+        height: auto;
+    }
+
+    form {
+        padding: 0 30%;
+    }
+
+    footer .innerFooterContainer {
+        flex-direction: row;
+    }
+
+    footer .prize {
+        margin-left: 15px;
+        justify-content: flex-start;
+    }
+
+    article .art1 ul li,
+    article .art2_inner.inner1 ul li,
+    article .art2_inner.inner2 ul li {
+        margin: 0;
+        padding: 1em;
+        font-size: 1rem;
+    }
+
+    article .art1 ul {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 15px;
+        align-items: center;
+        justify-items: center;
+    }
+
+    article .art2_inner.inner1 ul,
+    article .art2_inner.inner2 ul {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 15px;
+        align-items: center;
+        justify-items: center;
+    }
+
+    article .art2_inner.inner2 ul li {
+        justify-content: space-evenly;
+    }
+
+    article .art2_inner.inner2 ul li img {
+        width: 110px;
+        height: auto;
+    }
+
+    article .art2_inner.inner2 ul li span:last-child {
+        padding: 10px;
+        font-size: 0.8rem;
+        line-height: 1.1rem;
+    }
+
+    form h2 {
+        font-size: 1.7rem;
+    }
+
+    .banner .inner .photoBox {
+        display: block;
+        background-color: white;
+        position: absolute;
+        z-index: -1;
+        box-shadow: 0px 0px 18px -5px rgba(0, 0, 0, 0.3);
+        display: none;
+    }
+
+    .banner .inner .photoBox1 {
+        height: 210px;
+        width: 210px;
+        bottom: 30px;
+        left: 20px;
+        background: url("./imgs/bgs/03_makeup.jpg");
+        background-size: cover;
+        opacity: 0.8;
+    }
+
+    .banner .inner .photoBox2 {
+        height: 150px;
+        width: 300px;
+        bottom: 0;
+        right: -80px;
+        background: url("./imgs/bgs/02_makeup.jpg");
+        background-size: cover;
+        opacity: 0.6;
+    }
+
+    .banner .inner .photoBox3 {
+        height: 200px;
+        width: 260px;
+        bottom: 0;
+        left: 0;
+        background: url("./imgs/bgs/04_haircut.jpg");
+        background-size: cover;
+        opacity: 0.5;
+        display: none;
+    }
+
+    .banner .inner .photoBox4 {
+        height: 300px;
+        width: 190px;
+        right: 0;
+        top: 0;
+        background: url("./imgs/bgs/05_haircut.jpg");
+        background-size: cover;
+        opacity: 0.7;
+    }
+
+    .banner .inner .photoBox5 {
+        height: 200px;
+        width: 210px;
+        left: 0;
+        top: 0;
+        background: url("./imgs/bgs/01_nail.jpg");
+        background-size: cover;
+        opacity: 0.6;
+    }
+}
+
+@media screen and (min-width: 818px) {
+    .button.free.inArticle {
+        position: relative;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .banner {
+        height: 560px;
+        padding: 0 30%;
+    }
+
+    article .art1 ul {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}

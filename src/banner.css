@@ -1,91 +1,55 @@
 .banner {
-    font-family: 'Sawarabi Mincho', sans-serif;
-    line-height: 3.5rem;
-    -ms-flex-align: center;
-    -ms-flex-pack: center;
-    background-color: #111111;
-    color: rgba(255, 255, 255, 0.5);
-    -moz-align-items: center;
-    -webkit-align-items: center;
-    -ms-align-items: center;
-    align-items: center;
-    display: -moz-flex;
-    display: -webkit-flex;
-    display: -ms-flex;
-    display: flex;
-    -moz-justify-content: center;
-    -webkit-justify-content: center;
-    -ms-justify-content: center;
-    justify-content: center;
-    background-image: url("imgs/bg.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    border-top: 0;
-    display: -ms-flexbox;
-    height: 35rem !important;
-    min-height: 35rem;
-    overflow: hidden;
+    padding: 0 15px;
+    height: 400px;
     position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: inset 0px 0px 18px -5px rgba(0, 0, 0, 0.7);
+}
+
+.banner:after {
+    content: "";
+    position: absolute;
+    z-index: -3;
+    opacity: 0.8;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, #ad14568e 0%, rgba(194, 24, 92, 0.9) 74%), url("./imgs/bg.jpg");
+}
+
+.banner .inner {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.5em;
+}
+
+.banner .inner .innerH1 h1 {
     text-align: center;
-    width: 100%; }
-    .banner {
-      color: #ffffff; }
-    
-
-    .banner > .inner {
-      -moz-transform: scale(1.0);
-      -webkit-transform: scale(1.0);
-      -ms-transform: scale(1.0);
-      transform: scale(1.0);
-      -moz-transition: opacity 1s ease, -moz-transform 1s ease;
-      -webkit-transition: opacity 1s ease, -webkit-transform 1s ease;
-      -ms-transition: opacity 1s ease, -ms-transform 1s ease;
-      transition: opacity 1s ease, transform 1s ease;
-      opacity: 1;
-      position: relative;
-      z-index: 3; }
-      .banner > .inner > :last-child {
-        margin-bottom: 0; }
-    .banner h1 {
-      font-size: 2.6rem;
-      margin-bottom: 1rem; }
-    .banner span {
-      font-size: 1.8rem; }
-    .banner video {
-      -moz-transform: translateX(50%) translateY(50%);
-      -webkit-transform: translateX(50%) translateY(50%);
-      -ms-transform: translateX(50%) translateY(50%);
-      transform: translateX(50%) translateY(50%);
-      bottom: 50%;
-      height: auto;
-      min-height: 100%;
-      min-width: 100%;
-      overflow: hidden;
-      position: absolute;
-      right: 50%;
-      width: auto; }
-
-    .banner:after {
-      background: linear-gradient(135deg, #07b1ec 0%, #686868 74%);
-      content: ' ';
-      display: block;
-      height: 100%;
-      left: 0;
-      opacity: 0.6;
-      position: absolute;
-      top: 0;
-      webkit-linear-gradientidth: 100%;
-      width: 100%;
-      z-index: 1; }
-
-@media screen and (max-width:700px){
-  .banner{
-    line-height: 2rem;
-  }
-  .banner h1 {
     font-size: 1.2rem;
-    margin-bottom: 1rem; }
-  .banner span {
-    font-size: 1rem; }
+    line-height: 1.9rem;
+    letter-spacing: 1px;
+}
+
+.banner .inner span {
+    margin-top: 1em;
+}
+
+.banner .inner_imageBox {
+    margin-top: 3em;
+}
+
+.banner .inner_imageBox img {
+    filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.7));
+}
+
+.banner .inner .innerH1 h1 strong {
+    color: #d81b60;
+}
+
+.banner .inner .photoBox {
+    display: none;
 }

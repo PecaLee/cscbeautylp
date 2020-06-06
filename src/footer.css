@@ -1,38 +1,48 @@
-footer{
+footer {
     width: 100%;
-    font-family: 'Sawarabi Gothic', sans-serif;
-    font-size: 0.8rem;
+    font-size: 0.6rem;
     padding: 30px;
     color: rgba(255, 255, 255, 0.8);
     background-color: #111111;
     display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 0.8rem;
+}
+
+footer a {
+    color: rgba(255, 255, 255, 0.8);
+    text-decoration: none;
+}
+
+footer .innerFooterContainer,
+footer .prize {
+    display: flex;
     flex-direction: column;
+    margin-top: 10px;
+    justify-content: space-between;
+}
+
+footer .innerFooterContainer .innerFooterContainer_wrap {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 10px;
+}
+
+footer .innerFooterContainer .innerFooterContainer_wrap ul {
+    display: grid;
+    grid-template-rows: auto;
+    grid-gap: 10px;
+}
+
+footer .prize ul li {
+    margin: 10px 0;
+    display: flex;
     align-items: center;
 }
 
-.innerFooterContainer{
-    display: flex;
-}
-
-.innerFooterContainer_wrap{
-    display: flex;
-}
-
-.innerFooterContainer ul{
-    margin-right: 15px;
-}
-
-.innerFooterContainer ul li{
-    margin-top: 10px;
-    line-height: 0.9rem;
-}
-
-footer h2{
-    font-size: 1rem;
-    margin-bottom: 20px;
-}
-
-.prize img{
+footer .prize ul li img {
+    height: 30px;
     width: auto;
-    height: 40px;
+    margin-right: 8px;
 }

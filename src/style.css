@@ -1,31 +1,94 @@
-@import url("reset.css");
-@import url("header.css");
-@import url("banner.css");
-@import url("footer.css");
-@import url("article.css");
-@import url("review.css");
-@import url("mediaquery.css");
-@import url("contact.css");
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@700&family=Sawarabi+Gothic&family=Sawarabi+Mincho&display=swap');
+@import "reset.css";
+@import "header.css";
+@import "banner.css";
+@import "article.css";
+@import "partner.css";
+@import "review.css";
+@import "footer.css";
+@import "contact.css";
+@import "media.css";
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500;700;900&display=swap");
 
-*{
+/*
+font-family: 'Noto Sans JP', sans-serif;
+*/
+
+* {
     box-sizing: border-box;
 }
 
-html{
-    font-family: 'Sawarabi Gothic', sans-serif;
+body > * {
+    font-family: "Noto Sans JP", sans-serif;
 }
 
-body{
-    width: 100%;
+img {
+    max-width: 100%;
+}
+
+h1 {
+    font-family: "Noto Sans JP", sans-serif;
+    font-weight: 900;
+}
+
+h2 {
+    font-family: "Noto Sans JP", sans-serif;
+    font-weight: 900;
+}
+h3 {
+    font-family: "Noto Sans JP", sans-serif;
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 1.1rem;
+    line-height: 1.3rem;
+}
+
+h3 {
+    font-size: 1rem;
+    line-height: 1.3rem;
+}
+
+h4 {
+    font-family: "Noto Sans JP", sans-serif;
+    font-weight: 500;
+}
+
+a {
+    font-family: "Noto Sans JP", sans-serif;
+}
+
+a:focus {
+    outline: none;
+    border: none;
+}
+
+span {
+    line-height: 1.2rem;
+}
+
+.button a {
+    background-color: #d81b60;
+    padding: 7px 20px;
+    border-radius: 25px;
+    font-weight: 500;
+    text-decoration: none;
+    color: white;
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
+    box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+.button a:active {
+    transform: scale(0.95);
+    border: none;
+    outline: none;
 }
 
 body::before {
-    content: ' ';
+    content: " ";
     background-image: url(imgs/bg.jpg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -37,20 +100,5 @@ body::before {
     width: 100%;
     height: 100%;
     z-index: -1;
-    opacity: 0.05; 
-}
-
-a, a:hover, a:link, a:visited, a:active{
-    text-decoration: none;
-    color: rgba(255, 255, 255, 0.8);
-}
-
-h2{
-    font-family: 'Noto Sans JP', sans-serif;
-    font-size: 2rem;
-}
-
-h3{
-    font-family: 'Noto Sans JP', sans-serif;
-    font-size: 1.2rem;
+    opacity: 0.04;
 }

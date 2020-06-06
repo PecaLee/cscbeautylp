@@ -1,82 +1,71 @@
-.form{
-    width: 100%;
+form {
+    padding: 0 15px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    margin-bottom: 60px;
 }
 
-.form h2{
+form h2 {
     margin-bottom: 30px;
 }
 
-.pure-group{
+form .pure-group {
     width: 100%;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    margin: 10px 0;
 }
 
-.pure-group *{
-    width: 600px;
-    margin: 8px 0 8px 0;
+form .pure-group:first-child {
+    margin: 0;
 }
 
-label{
-    font-size: 1.5rem;
+form .pure-group:last-child {
+    margin: 0;
 }
 
-input{
-      border: 0px none ;
-      padding: 10px;
-      height: 3rem;
-      font-size: 1.1rem;
+form .pure-group input {
+    all: unset;
+    background-color: white;
+    height: 48px;
+    padding: 0 10px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 18px -5px rgba(0, 0, 0, 0.3);
 }
 
-textarea{
-    border: 0px none ;
-    padding: 10px;
-    font-size: 1.1rem;
-    resize: none;
+form .pure-group textarea {
+    all: unset;
+    background-color: white;
+    height: 100px;
+    padding: 10px 10px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 18px -5px rgba(0, 0, 0, 0.3);
 }
 
-input, textarea{
-    border-radius: 4px;
-    -webkit-box-shadow: 0px 0px 12px 2px rgba(0,0,0,0.1);
-    -moz-box-shadow: 0px 0px 12px 2px rgba(0,0,0,0.1);
-    box-shadow: 0px 0px 12px 2px rgba(0,0,0,0.1);
+form .pure-group * {
+    margin: 8px 0;
 }
 
-input[type=submit]{
-    margin-top: 30px;
-    width: 160px;
-    border-radius: 30px;
-    border: none;
-    background-color: #07b1ec;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.button-success.pure-button.button-xlarge {
+    all: unset;
+    background-color: #d81b60;
+    padding: 7px 20px;
+    border-radius: 25px;
+    font-weight: 500;
     text-decoration: none;
-    color: rgba(255, 255, 255, 0.8);
-    font-size: 1.1rem;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.1);
+    font-size: 1.2rem;
+    margin-top: 30px;
+    margin-bottom: 60px;
+    cursor: pointer;
 }
 
-@media screen and (max-width:480px){
-    .form{
-        width: 80%;
-    }
-
-    .form h2{
-        font-size: 1.2rem;
-    }
-
-    input, textarea, label{
-        font-size: 1rem;
-    }
-
-    .pure-group *{
-        width: 370px;
-        margin: 8px 0 8px 0;
-    }
+.button-success.pure-button.button-xlarge:active {
+    transform: scale(0.95);
+    border: none;
+    outline: none;
 }

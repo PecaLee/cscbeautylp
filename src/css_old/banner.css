@@ -1,0 +1,70 @@
+.banner {
+    font-family: "Noto Sans JP", sans-serif;
+    line-height: 3.5rem;
+    background-color: #111111;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image: url("imgs/bg.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-top: 0;
+    height: 35rem !important;
+    min-height: 35rem;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    width: 100%;
+}
+
+.banner > .inner {
+    position: relative;
+    z-index: 3;
+    color: black;
+    background-color: white;
+    padding: 3em;
+}
+.banner > .inner > :last-child {
+    margin-bottom: 0;
+}
+.banner h1 {
+    font-size: 2.6rem;
+    margin-bottom: 1rem;
+}
+.banner span {
+    font-size: 1.8rem;
+    color: #ad1457;
+}
+
+.banner h1 span {
+    font-size: 2.6rem;
+}
+
+.banner:after {
+    background: linear-gradient(135deg, #ad1457 0%, rgba(194, 24, 92, 0.719) 74%);
+    content: " ";
+    display: block;
+    height: 100%;
+    left: 0;
+    opacity: 0.6;
+    position: absolute;
+    top: 0;
+    webkit-linear-gradientidth: 100%;
+    width: 100%;
+    z-index: 1;
+}
+
+@media screen and (max-width: 700px) {
+    .banner {
+        line-height: 2rem;
+    }
+    .banner h1 {
+        font-size: 1.2rem;
+        margin-bottom: 1rem;
+    }
+    .banner span {
+        font-size: 1rem;
+    }
+}
